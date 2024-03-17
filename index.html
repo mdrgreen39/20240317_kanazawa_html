@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/rest.css" />
+    <title>株式会社TECH</title>
+    <style>
+        *, *::before, *::after{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <nav class="header">
+        <h1 class="header__canpaniy-name" style="font-size: 48px; margin: 50px 10px;" >株式会社TECH</h1>
+        <ul class="header__list" style="font-size: 20px; margin: 10px 10px; padding-left: 50px; list-style-type: disc;">
+            <li class="header__list__item" style="padding: 6px 6px;">
+                <a href="index.html" class="header__list__link">ホーム</a></li>
+            <li class="header__list__item" style="padding: 6px 6px;">
+                <a href="service.html">企業情報</a></li>
+            <li class="header__list__item" style="padding: 6px 6px;">
+                <a href="company.html" class="header__list__link">会社概要</a></li>
+            <li class="header__list__item" style="padding: 6px 6px;">
+                <a href="faq.html" class="header__list__link">よくある質問</a></li>
+            <li class="header__list__item" style="padding: 6px 6px;">
+                <a href="contact.html" class="header__list__link">お問い合わせ</a></li>
+        </ul>
+    </nav>
+    <div class="firstview">
+        <img src="img/mv.png" alt="ビル街の写真" style="margin: 10px 10px;">
+    </div>
+    <div class="discription" style="margin: 10px 10px;">
+        <p class="discription__lead" style="font-size: 14px; padding: 10px 10px 10px 0;">最新のテクノロジーで<em>社会課題</em>を解決</p>
+        <h2 class="discription__ttl" style="font-size: 24px; padding: 20px 10px 10px 0;">会社概要</h2>
+        <dl class="discription__list" style="width: 300px; padding: 15px 10px 10px 0;">
+            <div style="display: flex; margin: 10px 10px 10px 0;">
+                <dt class="discription__category" style="font-weight: bold; width: 30%; text-align: center;">会社名</dt>
+                <dd class="discription__info" style="width:70%;">株式会社TECH</dd>
+            </div>
+            <div style="display: flex; margin: 10px 10px 10px 0;">
+                <dt class="discription__category" style="font-weight: bold; width: 30%; text-align: center;">代表者</dt>
+                <dd class="discription__info" style="width:70%;">山田太郎</dd>
+            </div>
+            <div style="display: flex; margin: 10px 10px 10px 0;">
+                <dt class="discription__category" style="font-weight: bold; width: 30%; text-align: center;">所在地</dt>
+                <dd class="discription__info" style="width:70%;">東京都渋谷区神宮前</dd>
+            </div>
+            <div style="display: flex; margin: 10px 10px 10px 0;">
+                <dt class="discription__category" style="font-weight: bold; width: 30%; text-align: center;">設立</dt>
+                <dd class="discription__info" style="width:70%;">2019/07/17</dd>
+            </div>
+            <div style="display: flex; margin: 10px 10px 10px 0;">
+                <dt class="discription__category" style="font-weight: bold; width: 30%; text-align: center;">従業員数</dt>
+                <dd class="discription__info" style="width:70%;">100人</dd>
+            </div>
+            <div style="display: flex; margin: 10px 10px 10px 0;">
+                <dt class="discription__category" style="font-weight: bold; width: 30%; text-align: center;">資本金</dt>
+                <dd class="discription__info" style="width:70%;">1000万円</dd>
+            </div>
+        </dl>
+    </div>
+    <footer class="footer" style="margin: 10px 10px;">
+        <h2 class="footer__ttl" style="font-size: 24px; padding: 10px 10px 20px 0;">お問い合わせ</h2>
+        <div class="footer__contact-form" style=" padding: 10px 10px 5px 0">
+            <form action="detail.html" method="get" class="footer__contact-form__company-name" style="padding: 2px 5px 2px 0;">
+                <label for="company-name">会社名</label>
+                <input type="text" name="company-name" id="company-name">
+            </form>
+            <form action="detail.html" method="get" class="footer__contact-form__name" style="padding: 2px 5px 2px 0;">
+                <label for="name">お名前</label>
+                <input type="text" name="name" id="name">
+            </form>
+            <form action="detail.html" method="get" class="footer__contact-form__email" style="padding: 2px 5px 2px 0;">
+                <label for="email">メールアドレス</label>
+                <input type="email" name="email" id="email">
+            </form>
+            <form action="detail.html" method="get" class="footer__contact-form__massege" style="padding: 2px 5px 2px 0;">
+                <label for="textarea" style="display: inline-block; width: 130px;">お問い合わせ内容</label>
+                <textarea name="textarea" id="textarea" cols="80" rows="10" style="display: inline-block;"></textarea>
+            </form>
+            <form action="detail.html" method="get" class="footer__contact-form--submit-btn" style="margin: 2px 10px 2px 0;">
+                <input type="submit" value="お申し込み"/>
+            </form>
+        </div>
+        <small class="footer__copy-right" style="padding: 2px 10px 2px 0;">&copy; 2020 TECH inc.</small>
+    </footer>
+</body>
+</html>
