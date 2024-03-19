@@ -63,24 +63,26 @@
     <footer class="footer" style="margin: 10px 10px;">
         <h2 class="footer__ttl" style="font-size: 24px; padding: 10px 10px 20px 0;">お問い合わせ</h2>
         <div class="footer__contact-form" style=" padding: 10px 10px 5px 0">
-            <form action="" class="">
-                <div style="margin: 2px 10px 2px 0;">
+            <form action="detail.html" class="get">
+                <div class="footer__contact-form__company-name" style="margin: 2px 10px 2px 0;">
                     <label for="company-name">会社名</label>
                     <input type="text" name="company-name" id="company-name">
                 </div>
-                <div style="margin: 2px 10px 2px 0;">
+                <div class="footer__contact-form__name" style="margin: 2px 10px 2px 0;">
                     <label for="name">お名前</label>
                     <input type="text" name="name" id="name">
                 </div>
-                <div style="margin: 2px 10px 2px 0;">
+                <div class="footer__contact-form__email" style="margin: 2px 10px 2px 0;">
                     <label for="email">メールアドレス</label>
                     <input type="email" name="email" id="email">
                 </div>
-                <label for="textarea" style="display: inline-block; width: 130px;">お問い合わせ内容</label>
-                <textarea name="textarea" id="textarea" cols="80" rows="10" style="display: inline-block;"></textarea>
-            </form>
-            <form action="detail.html" method="get" class="footer__contact-form--submit-btn" style="margin: 2px 10px 2px 0;">
-                <input type="submit" value="お申し込み"/>
+                <div class="footer__contact-form__massege" style="margin: 2px 10px 5px 0;">
+                    <label for="textarea" style="display: inline-block; width: 130px;">お問い合わせ内容</label>
+                    <textarea name="textarea" id="textarea" cols="80" rows="10" style="display: inline-block;"></textarea>
+                </div>
+                <div class="footer__contact-form--submit-btn" style="margin: 2px 10px 2px 0;">
+                    <input type="submit" value="お申し込み" />
+                </div>
             </form>
         </div>
         <small class="footer__copy-right" style="padding: 2px 10px 2px 0;">&copy; 2020 TECH inc.</small>
